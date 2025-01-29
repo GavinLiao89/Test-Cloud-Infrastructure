@@ -1,6 +1,8 @@
 FROM mcr.microsoft.com/mmlspark/release:latest
 
-RUN apt-get update && apt-get install -y git && apt-get clean
+RUN apt-get update && \
+    apt-get install -y git && \
+    apt-get clean
 
 # env setting for the Jupyter Notebook
 ENV ACCEPT_EULA=yes
